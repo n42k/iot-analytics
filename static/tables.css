@@ -1,0 +1,5 @@
+
+#user_list td, #user_list th, #sessions_list td, #sessions_list th, #speakers_list td, #speakers_list th {
+    text-align: center;
+    vertical-align: middle;
+}

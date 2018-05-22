@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include common/head %>
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="row">
+        <nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+            <h1 class="site-title"><a href="/"><em class="fas fa-chart-line"></em>
+                    IoT Analytics</a></h1>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+            <ul class="nav nav-pills flex-column sidebar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"> Charts</a></li>
+                <li class="nav-item"><a class="nav-link" href="/users"> Users</a></li>
+                <li class="nav-item"><a class="nav-link  active" href="/speakers"> Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sessions"> Sessions</a></li>
+            </ul>
+            <a href="#" class="logout-button"><em class="fa fa-power-off"></em> Sign out</a>
+        </nav>
+        <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+            <header class="page-header row justify-center">
+                <div class="col-md-6 col-lg-8">
+                    <h1 class="float-left text-center text-md-left">Speaker</h1>
+                </div>
+                <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a
+                            class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="username mt-1">
+                            <h4 class="mb-1">Username</h4>
+                            <h6 class="text-muted">Super Admin</h6>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;"
+                         aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Sign out</a></div>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <section class="row">
+                <div class="col-sm-12">
+                    <div class="container-fluid">
+                        <div class="card " id="profile-card">
+                            <div class="profile-header-container">
+                                <div class="profile-header-img">
+                                    <img class="rounded-circle"
+                                         src=<%- (speaker.photo.length !== 0)? speaker.photo : 'https://www.timeshighereducation.com/sites/default/files/byline_photos/default-avatar.png' %> />
+                                    <div class="username_container">
+                                        <span class="label label-default username-label"> <%- speaker.name %></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body profile-card-body">
+                                <p class="card-text">
+                                    <%- speaker.description %>
+                                </p>
+                                <p><span>Username: </span> <%- speaker.username %></p>
+                                <p><span>Location: </span><%- (speaker.location.length !== 0)? speaker.location : 'N/D' %></p>
+                                <p><span>Company: </span><%- (speaker.company.length !== 0)? speaker.company : 'N/D' %></p>
+                                <p><span>Website: </span><%- (speaker.website.length !==0)? speaker.website : 'N/D' %></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

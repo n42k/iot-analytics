@@ -1,0 +1,13 @@
+.timeline_card {
+    border: 1px solid #7376df;
+    justify-content: center;
+}
+
+.timeline_badge {
+    background-color: #6365d2;
+}
+
+#user_no_sessions_message {
+    font-size: 24px;
+    color: black;
+}

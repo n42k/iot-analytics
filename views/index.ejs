@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include common/head %>
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="row">
+        <nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+            <h1 class="site-title"><a href="/"><em class="fas fa-chart-line"></em>
+                    IoT Analytics</a></h1>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+            <ul class="nav nav-pills flex-column sidebar-nav">
+                <li class="nav-item"><a class="nav-link active" href="/">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"> Charts</a></li>
+                <li class="nav-item"><a class="nav-link" href="/users"> Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="/speakers"> Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sessions"> Sessions</a></li>
+            </ul>
+            <a href="#" class="logout-button"><em class="fa fa-power-off"></em> Sign out</a>
+        </nav>
+        <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+            <header class="page-header row justify-center">
+                <div class="col-md-6 col-lg-8" >
+                    <h1 class="float-left text-center text-md-left">Dashboard</h1>
+                </div>
+                <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="username mt-1">
+                            <h4 class="mb-1">Username</h4>
+                            <h6 class="text-muted">Super Admin</h6>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Sign out</a></div>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <section class="row">
+                <div class="col-sm-12">
+                    <div class="card-deck status_card_deck">
+                        <div class="card border-secondary mb-3 text-center" style="max-width: 18rem;">
+                            <div class="card-header">Audience</div>
+                            <div class="card-body text-secondary">
+                                <em class="fas fa-users"></em>
+                                <p class="card-text"> 55</p>
+                            </div>
+                        </div>
+                        <div class="card border-secondary mb-3 text-center" style="max-width: 18rem;">
+                            <div class="card-header">Sessions taking place</div>
+                            <div class="card-body text-secondary">
+                                <em class="fas fa-chalkboard" ></em>
+                                <p class="card-text"> 5</p>
+                            </div>
+                        </div>
+                        <div class="card border-secondary mb-3 text-center" style="max-width: 18rem;">
+                            <div class="card-header">Average audience per session</div>
+                            <div class="card-body text-secondary">
+                                <em class="fas fa-chalkboard-teacher"></em>
+                                <p class="card-text"> 13</p>
+                            </div>
+                        </div>
+                        <div class="card border-secondary mb-3 text-center" style="max-width: 18rem;">
+                            <div class="card-header">Total speakers</div>
+                            <div class="card-body text-secondary">
+                                <em class="fas fa-microphone"></em>
+                                <p class="card-text"> 7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

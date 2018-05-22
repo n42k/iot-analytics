@@ -1,0 +1,48 @@
+#profile-card {
+    width: 25rem;
+    margin: 0 auto;
+    background-color: #7376df;
+
+}
+
+.profile-header-container{
+    margin: 0 auto;
+
+}
+
+.profile-header-img {
+    padding: 30px;
+}
+
+.profile-header-img > img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.profile-card-body {
+    background-color: white;
+}
+
+.profile-card-body p {
+    color: black;
+}
+
+.profile-card-body span {
+    font-weight: bold;
+}
+
+/**
+ * Label component
+ */
+.username_container {
+    margin-top: -19px;
+    text-align: center;
+}
+.label.label-default.username-label {
+    background-color:  black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+    color: white;
+}
+
